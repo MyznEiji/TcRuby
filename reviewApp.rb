@@ -20,8 +20,8 @@ def post_review(a_posts)
   a_posts
 end
 
+# レビューを読む
 def read_review(a_posts)
-  # レビューを読む
   number = 0
   a_posts.each do |post|
     puts "[#{number}] : #{post[:title]}のレビュー"
@@ -32,7 +32,7 @@ def read_review(a_posts)
   input = gets.to_i
 
   if a_posts.length <= input
-    puts "入力値が正しくありません"
+    puts '入力値が正しくありません'
     return
   end
 
